@@ -1,0 +1,3 @@
+# Scala Bug: Unexpected Input Handling
+
+This repository demonstrates a potential bug in Scala code that involves the use of `scala.util.Try` for exception handling.  The code attempts to convert a string to an integer; however, it might fail to handle situations where the input string cannot be parsed correctly. The `getOrElse(0)` approach silently returns 0 in case of failure, masking potential errors and making debugging more challenging.  The solution proposes an alternative that provides more robust error handling and prevents this silent failure.  The files named `bug.scala` and `bugSolution.scala` contain the buggy code and the improved version, respectively.
